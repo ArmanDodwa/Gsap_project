@@ -17,7 +17,7 @@ const cockTails = () => {
         start: "top 30%",
         end: "bottom 80%",
         scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -51,8 +51,8 @@ const cockTails = () => {
         className="absolute right-0 bottom-0"
       ></img>
 
-      <div className="list w-full p-25 -mt-15 flex flex-row justify-between ">
-        <div className=" popular space-y-8 w-full md:w-fit gap-15">
+      <div className="w-full p-25 -mt-15 flex flex-row justify-between ">
+        <div className="popular space-y-8 w-full md:w-fit gap-15">
           <h2 className="text-[20px]">Most popular cocktails:</h2>
 
           <ul className="gap-4">
