@@ -12,11 +12,25 @@
 
 html,
 body {
-    width: 100%;
-    background-color: black;
-    color: white;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    background-image: url("/images/noise.png");
-    background-size: cover
+  width: 100%;
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-image: url("/images/noise.png");
+  background-size: cover;
+  height: 100%;
+  margin: 0;
 }
+
+/* ✅ Hide scrollbar (Chrome, Safari) */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* ✅ Hide scrollbar (Firefox) */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+

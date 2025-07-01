@@ -73,7 +73,7 @@ const Hero = () => {
         start: startValue,
         end: endValue,
         scrub: true,
-        markers: true,
+        // markers: true,
         pin: true,
       },
     });
@@ -91,7 +91,7 @@ const Hero = () => {
 
   return (
     <>
-      <section id="hero" className="inset-0 size-full  bg-opcity-0">
+      <section id="hero" className="inset-0 size-full">
         <h1
           id="title"
           className=" mt-20 text-8xl md:text-[17vw] leading-none text-center font-modern-negra"
@@ -108,14 +108,14 @@ const Hero = () => {
           alt="right leaf"
           className="right-leaf absolute right-0 md:bottom-0 xl:top-0 2xl:top-12 top-1/2 md:w-fit w-24"
         />
-        <div className="body relative top-40 left-20 ">
-          <div className="content">
+        <div className="body relative top-30 left-20 ">
+          <div className="content -mt-4">
             <div className="space-y-5 hidden md:block">
               <p className="uppercase tracking-wide text-white opacity-80">
                 Cool. Crisp. Classic.
               </p>
 
-              <p className="subTitle font-modern-negra text-5xl text-yellow-200 max-w-xl">
+              <p className="subTitle font-modern-negra text-5xl text-yellow-200 max-w-xl -mt-5">
                 Sip the Spirit <br /> of summer
               </p>
             </div>
@@ -143,7 +143,7 @@ const Hero = () => {
           muted
           playsInline
           preload="auto"
-          className="mix-blend-screen w-full h-full "
+          className="w-full h-full "
         ></video>
       </div>
     </>
