@@ -78,7 +78,6 @@ const Hero = () => {
       },
     });
 
-
     videoRef.current.onloadedmetadata = () => {
       tl.to(videoRef.current, {
         currentTime: videoRef.current.duration,
@@ -91,7 +90,7 @@ const Hero = () => {
 
   return (
     <>
-      <section id="hero" className="inset-0 size-full">
+      <section id="hero" className="inset-0 w-full h-screen ">
         <h1
           id="title"
           className=" mt-20 text-8xl md:text-[17vw] leading-none text-center font-modern-negra"
@@ -136,7 +135,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <div className="video mix-blend-screen w-full md:h-[80%] h-1/2 absolute bottom-0 left-0">
+      <div className="video mix-blend-screen w-full md:h-[80%] h-screen absolute bottom-0 left-0">
         <video
           ref={videoRef}
           src="/videos/output.mp4"

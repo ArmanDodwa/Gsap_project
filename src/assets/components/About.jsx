@@ -12,7 +12,7 @@ const About = () => {
     const scrollTimeLine = gsap.timeline({
       scrollTrigger: {
         trigger: "#about",
-        start: "400px top ",
+        start: "top center ",
         // end: "bottom top",
         // scrub: true,
         markers: true,
@@ -25,18 +25,23 @@ const About = () => {
       duration: 1,
       ease: "expo.out",
       stagger: 0.02,
+    }).from(".top-gird",{
+      opacity:0,
+      duration: 1,
+      ease: "expo.out",
+      stagger: 0.04,
     });
   });
 
   return (
     <div id="about" className="h-full w-full ">
-      <div className="absolute -bottom-[205%] w-full h-full mb-16 md:px-0 px-5 ">
+      <div className="absolute w-full h-full mb-16 md:px-0 px-5 ">
         <div className="flex flex-row w-full justify-between p-20">
           <div className="md:col-span-8 w-[40%]">
             <p className="inline-block rounded-full bg-white text-black px-4 py-2 text-sm font-medium mb-8">
               Best Cocktails
             </p>
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 ">
               Where every detail <br />
               matter <span className="text-white"> - </span>
               from muddle

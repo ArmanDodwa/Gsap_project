@@ -37,21 +37,22 @@ const cockTails = () => {
   });
 
   return (
-    <section id="cocktail" className="absolute w-full h-full">
+    <>
+      <section id="cocktail" className="w-full h-screen bg-black">
       <img
         src="/images/cocktail-left-leaf.png"
         alt="l-leaf"
         id="c-left-leaf"
-        className="absolute left-0 bottom-0"
+        className="absolute left-0 -bottom-[100%]"
       ></img>
       <img
         src="/images/cocktail-right-leaf.png"
         alt="r-leaf"
         id="c-right-leaf"
-        className="absolute right-0 bottom-0"
+        className="absolute right-0 -bottom-[100%]"
       ></img>
 
-      <div className="w-full p-25 -mt-15 flex flex-row justify-between ">
+      <div className="absolute w-full p-25 -mt-15 flex flex-row justify-between ">
         <div className="popular space-y-8 w-full md:w-fit gap-15">
           <h2 className="text-[20px]">Most popular cocktails:</h2>
 
@@ -66,7 +67,7 @@ const cockTails = () => {
                     {drink.country} | {drink.detail}
                   </p>
                 </div>
-                <span className="absolute left-[25%]">- {drink.price}</span>
+                <span className=" left-[25%]">- {drink.price}</span>
               </li>
             ))}
           </ul>
@@ -85,13 +86,16 @@ const cockTails = () => {
                     {drink.country} | {drink.detail}
                   </p>
                 </div>
-                <span className="absolute right-10">- {drink.price}</span>
+                <span className="right-10">- {drink.price}</span>
               </li>
             ))}
           </ul>
         </div>
       </div>
     </section>
+    </>
+
+
   );
 };
 
