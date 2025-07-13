@@ -38,21 +38,21 @@ const cockTails = () => {
 
   return (
     <>
-      <section id="cocktail" className="w-full h-screen bg-black">
+      <section id="cocktail" className="w-full h-screen  relative overflow-hidden">
       <img
         src="/images/cocktail-left-leaf.png"
         alt="l-leaf"
         id="c-left-leaf"
-        className="absolute left-0 -bottom-[100%]"
+        className="absolute overflow-x-auto-auto bottom-0 left-0  "
       ></img>
       <img
         src="/images/cocktail-right-leaf.png"
         alt="r-leaf"
         id="c-right-leaf"
-        className="absolute right-0 -bottom-[100%]"
+        className="absolute bottom-0 right-0 "
       ></img>
 
-      <div className="absolute w-full p-25 -mt-15 flex flex-row justify-between ">
+      <div className="w-full p-25 -mt-15 flex flex-row justify-between overflow-hidden">
         <div className="popular space-y-8 w-full md:w-fit gap-15">
           <h2 className="text-[20px]">Most popular cocktails:</h2>
 

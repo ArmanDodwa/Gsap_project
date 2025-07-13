@@ -21,16 +21,26 @@ body {
   background-size: cover;
   height: 100%;
   margin: 0;
+   /* -webkit-overflow-scrolling: touch; */
 }
 
 /* ✅ Hide scrollbar (Chrome, Safari) */
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
+/* body::-webkit-scrollbar {
+  display: none;
+} */
 
 /* ✅ Hide scrollbar (Firefox) */
-body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
-}
+/* body {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
+} */
+
+/* body {
+  -ms-overflow-style: auto;
+  scrollbar-width: auto;
+} */
+
 

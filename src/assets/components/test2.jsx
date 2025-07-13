@@ -65,7 +65,7 @@ const Hero = () => {
       );
 
     // const startValue = ismobile ? "top 50%" : "50% 60%";
-    const startValue = ismobile ? "top 50%" : "center 50%";
+    const startValue = ismobile ? "top 50%" : "center 30%";
     // const endValue = ismobile ? "120% top" : "100% top";
     const endValue = ismobile ? "120% top" : "130% top";
 
@@ -75,6 +75,7 @@ const Hero = () => {
         start: startValue,
         end: endValue,
         scrub: true,
+        markers: true,
         pin: true,
       },
     });
@@ -91,62 +92,68 @@ const Hero = () => {
 
   return (
     <>
-      <div className="w-full h-full relative">
+    <div className="w-full h-full relative">
         <section id="hero" className="w-full h-screen relative overflow-hidden">
-          <h1
-            id="title"
-            className=" mt-20 text-8xl md:text-[17vw] leading-none text-center font-modern-negra"
-          >
-            MOJITO
-          </h1>
-          <img
-            src="/images/hero-left-leaf.png"
-            alt="left leaf"
-            className="left-leaf absolute left-0 md:top-20 xl:top-36 2xl:top-52 md:bottom-auto -bottom-20 md:w-fit w-1/3"
-          />
-          <img
-            src="/images/hero-right-leaf.png"
-            alt="right leaf"
-            className="right-leaf absolute right-0 md:bottom-0 xl:top-0 2xl:top-12 top-1/2 md:w-fit w-24"
-          />
-          <div className="body relative top-30 left-20 ">
-            <div className="content -mt-4">
-              <div className="space-y-5 hidden md:block">
-                <p className="uppercase tracking-wide text-white opacity-80">
-                  Cool. Crisp. Classic.
-                </p>
-
-                <p className="subTitle font-modern-negra text-5xl text-yellow-200 max-w-xl -mt-5">
-                  Sip the Spirit <br /> of summer
-                </p>
-              </div>
-            </div>
-            <div className="ml-auto space-y-5 text-lg lg:max-w-2xs md:max-w-xs w-full text-right relative -top-37 -left-50">
-              <p className="subTitle text-white opacity-80">
-                Every cocktail on our menu is a blend of premium ingredients,
-                creative flair, and timeless recipes - designed to delight your
-                senses.
+        <h1
+          id="title"
+          className=" mt-20 text-8xl md:text-[17vw] leading-none text-center font-modern-negra"
+        >
+          MOJITI
+        </h1>
+        <img
+          src="/images/hero-left-leaf.png"
+          alt="left leaf"
+          className="left-leaf absolute left-0 md:top-20 xl:top-36 2xl:top-52 md:bottom-auto -bottom-20 md:w-fit w-1/3"
+        />
+        <img
+          src="/images/hero-right-leaf.png"
+          alt="right leaf"
+          className="right-leaf absolute right-0 md:bottom-0 xl:top-0 2xl:top-12 top-1/2 md:w-fit w-24"
+        />
+        <div className="body relative top-30 left-20 ">
+          <div className="content -mt-4">
+            <div className="space-y-5 hidden md:block">
+              <p className="uppercase tracking-wide text-white opacity-80">
+                Cool. Crisp. Classic.
               </p>
-              <a
-                href="#"
-                className="font-semibold opacity-80 2xl:text-start text-center hover:text-yellow"
-              >
-                View More
-              </a>
+
+              <p className="subTitle font-modern-negra text-5xl text-yellow-200 max-w-xl -mt-5">
+                Sip the Spirit <br /> of summer
+              </p>
             </div>
           </div>
-        </section>
-        <div className="video pointer-events-none mix-blend-screen w-full md:h-[80%] h-1/2 absolute left-0 top-[20%] overflow-y-hidden">
-          <video
-            ref={videoRef}
-            src="/videos/output.mp4"
-            muted
-            playsInline
-            preload="auto"
-            className="w-full h-full "
-          ></video>
+          <div className="ml-auto space-y-5 text-lg lg:max-w-2xs md:max-w-xs w-full text-right relative -top-37 -left-50">
+            <p className="subTitle text-white opacity-80">
+              Every cocktail on our menu is a blend of premium ingredients,
+              creative flair, and timeless recipes - designed to delight your
+              senses.
+            </p>
+            <a
+              href="#"
+              className="font-semibold opacity-80 2xl:text-start text-center hover:text-yellow"
+            >
+              View More
+            </a>
+          </div>
         </div>
+      </section>
+      <div className="video pointer-events-none mix-blend-screen w-full md:h-[80%] h-1/2 absolute left-0 top-[20%] overflow-x-hidden">
+        <video
+          ref={videoRef}
+          src="/videos/output.mp4"
+          muted
+          playsInline
+          preload="auto"
+          className="w-full h-full "
+        ></video>
       </div>
+    </div>
+      
+
+     <div className="bg-red-200 w-full h-screen "></div> 
+     <div className="bg-red-700 w-full h-screen "></div> 
+     <div className="bg-red-200 w-full h-screen "></div> 
+
     </>
   );
 };
