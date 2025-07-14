@@ -6,6 +6,7 @@ import About from "./assets/components/About";
 import Test from "./assets/components/test";
 import Art from "./assets/components/Art";
 import Test2 from "./assets/components/test2";
+import Menu from "./assets/components/Menu";
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Cocktails />
       <About/>
       <Art />
+      <Menu/>
     </main>
   );
 }

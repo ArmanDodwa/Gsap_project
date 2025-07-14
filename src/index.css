@@ -24,6 +24,23 @@ body {
    /* -webkit-overflow-scrolling: touch; */
 }
 
+.masked-img {
+  mask-image: url("/images/mask-img.png");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 50%;
+
+  /* For WebKit browsers (Chrome, Safari, Edge) */
+  -webkit-mask-image: url("/images/mask-img.png");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: 50%;
+}
+
+
+
+
+
 /* ✅ Hide scrollbar (Chrome, Safari) */
 /* body::-webkit-scrollbar {
   display: none;
